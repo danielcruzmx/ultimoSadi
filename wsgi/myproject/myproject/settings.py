@@ -111,11 +111,15 @@ if ON_OPENSHIFT:
         }
     }
 else:
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(DATA_DIR, 'db.sqlite3'),
-        }
+   DATABASES = {
+    	'default': {
+        	'ENGINE': 'django.db.backends.mysql',
+        	'NAME': 'admin',
+        	'USER': 'root',
+        	'PASSWORD': 'valeria1',
+        	'HOST': 'localhost',
+        	'PORT': '3306'
+    	}
     }
 
 # Internationalization

@@ -139,5 +139,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
 
+STATICFILES_DIRS = (
+    '/Library/Python/2.7/site-packages/django/contrib/admin/static/',
+)
+
+STATIC_ROOT = '/Users/danielcruzmx/sadicarnot/ultimoSadi/wsgi/static/'
+
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(WSGI_DIR, 'static')
+
+#STATIC_URL = '/static/'
+#STATIC_ROOT = os.path.join(WSGI_DIR, 'static')
